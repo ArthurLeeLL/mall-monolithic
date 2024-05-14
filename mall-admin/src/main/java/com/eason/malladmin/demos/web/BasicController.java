@@ -58,6 +58,13 @@ public class BasicController {
         return "index.html";
     }
 
+    // http://127.0.0.1:8080/hello?name=lisi
+    @RequestMapping("/heartbeat")
+    @ResponseBody
+    public String heartbeat() {
+        return "Pong";
+    }
+
     @ModelAttribute
     public void parseUser(@RequestParam(name = "name", defaultValue = "unknown user") String name
             , @RequestParam(name = "age", defaultValue = "12") Integer age, User user) {
