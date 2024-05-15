@@ -10,9 +10,9 @@
 
     <!--继承SpringBoot父项目，控制所有依赖版本-->
     <parent>
-        <groupId>org.springframework.boot</groupId>
-        <artifactId>spring-boot-starter-parent</artifactId>
-        <version>2.7.5</version>
+        <groupId>com.eason.mall</groupId>
+        <artifactId>mall-tiny</artifactId>
+        <version>0.0.1-SNAPSHOT</version>
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
     <dependencies>
@@ -34,6 +34,30 @@
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-autoconfigure</artifactId>
         </dependency>
+<!--        &lt;!&ndash;MyBatis分页插件&ndash;&gt;-->
+<!--        <dependency>-->
+<!--            <groupId>com.github.pagehelper</groupId>-->
+<!--            <artifactId>pagehelper-spring-boot-starter</artifactId>-->
+<!--            <version>${pagehelper-starter.version}</version>-->
+<!--        </dependency>-->
+<!--        &lt;!&ndash;集成druid连接池&ndash;&gt;-->
+<!--        <dependency>-->
+<!--            <groupId>com.alibaba</groupId>-->
+<!--            <artifactId>druid-spring-boot-starter</artifactId>-->
+<!--            <version>${druid.version}</version>-->
+<!--        </dependency>-->
+<!--        &lt;!&ndash;Mysql数据库驱动&ndash;&gt;-->
+<!--        <dependency>-->
+<!--            <groupId>mysql</groupId>-->
+<!--            <artifactId>mysql-connector-java</artifactId>-->
+<!--            <version>${mysql-connector.version}</version>-->
+<!--        </dependency>-->
+<!--        &lt;!&ndash;springfox swagger官方Starter&ndash;&gt;-->
+<!--        <dependency>-->
+<!--            <groupId>io.springfox</groupId>-->
+<!--            <artifactId>springfox-boot-starter</artifactId>-->
+<!--            <version>${springfox-swagger.version}</version>-->
+<!--        </dependency>-->
     </dependencies>
 
 </project>

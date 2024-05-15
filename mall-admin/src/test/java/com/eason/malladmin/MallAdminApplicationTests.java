@@ -8,6 +8,7 @@ class MallAdminApplicationTests {
 
     @Test
     void contextLoads() {
+        System.out.println("Test function has been called");
     }
 
 }
