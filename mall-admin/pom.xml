@@ -34,25 +34,35 @@
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-autoconfigure</artifactId>
         </dependency>
-<!--        &lt;!&ndash;MyBatis分页插件&ndash;&gt;-->
+        <dependency>
+            <groupId>org.mybatis.spring.boot</groupId>
+            <artifactId>mybatis-spring-boot-starter</artifactId>
+            <version>${mybatis-starter.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>mysql</groupId>
+            <artifactId>mysql-connector-java</artifactId>
+            <version>8.0.15</version>
+        </dependency>
+        <!--MyBatis分页插件-->
 <!--        <dependency>-->
 <!--            <groupId>com.github.pagehelper</groupId>-->
 <!--            <artifactId>pagehelper-spring-boot-starter</artifactId>-->
 <!--            <version>${pagehelper-starter.version}</version>-->
 <!--        </dependency>-->
-<!--        &lt;!&ndash;集成druid连接池&ndash;&gt;-->
+        <!--集成druid连接池-->
 <!--        <dependency>-->
 <!--            <groupId>com.alibaba</groupId>-->
 <!--            <artifactId>druid-spring-boot-starter</artifactId>-->
 <!--            <version>${druid.version}</version>-->
 <!--        </dependency>-->
-<!--        &lt;!&ndash;Mysql数据库驱动&ndash;&gt;-->
+        <!--Mysql数据库驱动-->
 <!--        <dependency>-->
 <!--            <groupId>mysql</groupId>-->
 <!--            <artifactId>mysql-connector-java</artifactId>-->
 <!--            <version>${mysql-connector.version}</version>-->
 <!--        </dependency>-->
-<!--        &lt;!&ndash;springfox swagger官方Starter&ndash;&gt;-->
+        <!--springfox swagger官方Starter-->
 <!--        <dependency>-->
 <!--            <groupId>io.springfox</groupId>-->
 <!--            <artifactId>springfox-boot-starter</artifactId>-->

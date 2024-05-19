@@ -1,5 +1,6 @@
 package com.eason.malladmin.config;
 
+import org.mybatis.spring.annotation.MapperScan;
 import org.springframework.context.annotation.Configuration;
 
 /**
@@ -10,5 +11,6 @@ import org.springframework.context.annotation.Configuration;
  */
 
 @Configuration
+@MapperScan("com.eason.malladmin.dao")
 public class MyBatisConfig {
 }
