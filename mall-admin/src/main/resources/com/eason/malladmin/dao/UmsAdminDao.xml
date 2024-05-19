@@ -3,9 +3,10 @@
 <mapper namespace="com.eason.malladmin.dao.UmsAdminDao">
     <select id="selectByIdSimple" resultType="com.eason.malladmin.model.UmsAdmin">
         select
+            id,
             username,
             password,
-            icon as avatar,
+            icon,
             email,
             nick_name as nickName,
             note,
@@ -15,4 +16,49 @@
         from ums_admin
         where id = #{id}
     </select>
+
+    <insert id="insertSimple">
+        insert into
+        ums_admin(
+            username,
+            password,
+            icon,
+            email,
+            nick_name,
+            note,
+            create_time,
+            login_time,
+            status
+        )
+        values (
+            #{username},
+            #{password},
+            #{icon},
+            #{email},
+            #{nickName},
+            #{note},
+            #{createTime},
+            #{loginTime},
+            #{status}
+        )
+        <selectKey keyColumn="id" resultType="long" keyProperty="id" order="AFTER">
+            SELECT LAST_INSERT_ID()
+        </selectKey>
+    </insert>
+    <update id="updateSimple">
+        update ums_admin
+        set username = #{username},
+            password = #{password},
+            icon = #{icon},
+            email = #{email},
+            nick_name = #{nickName},
+            note = #{note},
+            create_time = #{createTime},
+            login_time = #{loginTime}
+        where id = #{id}
+    </update>
+    <delete id="deleteByIdSimple">
+        delete from ums_admin
+        where id = #{id}
+    </delete>
 </mapper>

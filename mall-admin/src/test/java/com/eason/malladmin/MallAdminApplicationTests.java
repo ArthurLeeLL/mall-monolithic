@@ -26,4 +26,25 @@ class MallAdminApplicationTests {
         UmsAdmin umsAdmin = umsAdminDao.selectByIdSimple(1L);
         LOGGER.info("Test function testSelectByIdSimple result={}", umsAdmin);
     }
+
+    @Test
+    void testInsertSimple() {
+        UmsAdmin umsAdmin = new UmsAdmin();
+        int res = umsAdminDao.insertSimple(umsAdmin);
+        LOGGER.info("Test function testSelectByIdSimple result={}", res);
+    }
+
+    @Test
+    void testUpdateSimple() {
+        UmsAdmin umsAdmin = umsAdminDao.selectByIdSimple(1L);
+        umsAdmin.setNickName(umsAdmin.getNickName() + "New");
+        int res = umsAdminDao.updateSimple(umsAdmin);
+        LOGGER.info("Test function testSelectByIdSimple result={}", res);
+    }
+
+    @Test
+    void testDeleteByIdSimple() {
+        int res = umsAdminDao.deleteByIdSimple(7L);
+        LOGGER.info("Test function testSelectByIdSimple result={}", res);
+    }
 }

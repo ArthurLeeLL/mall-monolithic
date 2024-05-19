@@ -13,4 +13,10 @@ import org.springframework.stereotype.Repository;
 @Repository
 public interface UmsAdminDao {
     UmsAdmin selectByIdSimple(long id);
+
+    int insertSimple(UmsAdmin entity);
+
+    int updateSimple(UmsAdmin entity);
+
+    int deleteByIdSimple(long id);
 }

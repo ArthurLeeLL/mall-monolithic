@@ -1,5 +1,7 @@
 package com.eason.malladmin.model;
 
+import lombok.Data;
+
 import java.io.Serializable;
 import java.util.Date;
 
@@ -9,6 +11,8 @@ import java.util.Date;
  * @Author Eason Lee
  * @Date 2024-05-19 9:27 AM
  */
+
+@Data
 public class UmsAdmin implements Serializable {
     private long id;
 
@@ -16,7 +20,7 @@ public class UmsAdmin implements Serializable {
 
     private String password;
 
-    private String avatar;
+    private String icon;
 
     private String email;
 
@@ -24,7 +28,7 @@ public class UmsAdmin implements Serializable {
 
     private String note;
 
-    private Date createDate;
+    private Date createTime;
 
     private Date loginTime;
 
